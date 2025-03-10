@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,5 @@ Route::prefix('/admin')->group(function () {
     Route::get('/berita', function () {
         echo "Selamat datang di halaman kelola berita";
     });
-    Route::get('/kategori', function () {
-        echo "Selamat datang di halaman kategori berita";
-    });
+    Route::resource('/kategori', CategoryController::class);
 });

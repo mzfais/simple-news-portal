@@ -26,6 +26,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ url('admin/kategori') }}" class="nav-link">
+                        <i class="nav-icon bi bi-list"></i>
+                        <p>Kategori</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="./generate/theme.html" class="nav-link">
                         <i class="nav-icon bi bi-palette"></i>
                         <p>Theme Generate</p>
