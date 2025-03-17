@@ -4,6 +4,7 @@
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="News Portal | Dashboard" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="author" content="KuliahFrameworkProgrammingITN" />
     <meta name="description" content="News Portal adalah projek kuliah Framework Programming Teknik Informatika ITN" />
     <meta name="keywords"

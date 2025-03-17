@@ -32,6 +32,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ url('admin/news') }}" class="nav-link">
+                        <i class="nav-icon bi bi-newspaper"></i>
+                        <p>Berita</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="./generate/theme.html" class="nav-link">
                         <i class="nav-icon bi bi-palette"></i>
                         <p>Theme Generate</p>

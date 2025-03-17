@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +24,10 @@ Route::prefix('/admin')->group(function () {
         echo "Selamat datang di halaman kelola berita";
     });
     Route::resource('/kategori', CategoryController::class);
+    Route::controller(NewsController::class)->prefix('news')->group(function () {
+        Route::get('/', 'index')->name('news.index');
+        Route::get('/create', 'create')->name('news.create');
+        Route::post('/store', 'store')->name('news.store');
+        Route::post('/upload-image', 'uploadImage')->name('news.uploadImage');
+    });
 });
